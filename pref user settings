@@ -1,0 +1,15 @@
+{
+	"block_caret": true,
+	"caret_blink_interval": 0.8,
+	"color_scheme": "Packages/Agila Theme/Agila Origin Oceanic Next.tmTheme",
+	"font_size": 20,
+	"ignored_packages":
+	[
+		"zzz A File Icon zzz"
+	],
+	"mini_diff": false,
+	"theme": "Default.sublime-theme",
+	"vintage_start_in_command_mode": true,
+	"wide_caret": true,
+	"word_wrap": true
+}
