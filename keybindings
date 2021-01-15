@@ -1,0 +1,50 @@
+[
+	{ "keys": ["super+shift+r"],
+	"command": "build" },
+	{ "keys": ["super+r"], "command": "goto_symbol_in_project" },
+
+	{ "keys": ["super+b"], "command": "toggle_side_bar" },
+
+	{ "button": "scroll_down", "modifiers": ["command"], "command": "decrease_font_size" },
+    { "button": "scroll_up", "modifiers": ["command"], "command": "increase_font_size" },
+    { "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
+    { "keys": ["super+e"], "command": "move_to", "args": {"to": "eol"} },
+    { "keys": ["j"], "command": "set_motion", "args": {
+		"motion": "move",
+		"motion_args": {"by": "lines", "forward": false, "extend": true },
+		"linewise": true },
+		"context": [{"key": "setting.command_mode"}]
+	},
+
+	{ "keys": ["k"], "command": "set_motion", "args": {
+		"motion": "move",
+		"motion_args": {"by": "lines", "forward": true, "extend": true },
+		"linewise": true },
+		"context": [{"key": "setting.command_mode"}]
+	},
+	{
+    "keys": ["j", "j"],
+    "command": "exit_insert_mode",
+    "context":
+    [
+        { "key": "setting.command_mode", "operand": false },
+        { "key": "setting.is_widget", "operand": false }
+    ]
+	},
+
+	{ "keys": ["b"], "command": "set_motion", "args": {
+		"motion": "move",
+		"motion_args": {"by": "stops", "word_begin": true, "punct_begin": true, "empty_line": true, "forward": true, "extend": true },
+		"clip_to_line": true },
+		"context": [{"key": "setting.command_mode"}]
+	},
+
+	{ "keys": ["w"], "command": "set_motion", "args": {
+		"motion": "move",
+		"motion_args": {"by": "stops", "word_begin": true, "punct_begin": true, "empty_line": true, "forward": false, "extend": true },
+		"clip_to_line": true },
+		"context": [{"key": "setting.command_mode"}]
+	}
+
+]
+	
